@@ -1,0 +1,30 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98vw;
+    z-index: 10;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(50% 51200% at 50% 48.89%, #5865F2 0%, #593695 100%);
+    padding: 0 2vw;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9em
+}
+nav div a {
+    margin-right: 2.2vw;
+    text-decoration: none !important;
+    border-radius: 20%;
+    border: none;
+    color:  white;
+    height: 90%;
+    width: 25%;
+    font-size: 1.1em;
+}
+nav img {
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2)); 
+    height: 80%;
+}

@@ -1,0 +1,44 @@
+.feature {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: min(2vh, 2vw);
+    text-align: center;
+    transition: background-color 0.2s ease-in-out
+}
+
+.features {
+    margin: 5vh 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vw;
+    width: 80vw;
+    height: 40vh;
+}
+.feature svg {
+    height: 18%;
+    width: 18%;
+    margin-bottom: 3vh;
+}
+.feature h2 {
+    font-size: 1.9em;
+    width: 80%;
+}
+.feature p {
+    font-size: 1em;
+    width: 90%;
+}
+.feature:hover {
+    background-color: rgba(0, 0, 0, 0.4)
+}
+@media screen and (max-width: 500px) {
+    .features {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+}

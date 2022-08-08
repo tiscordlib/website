@@ -1,0 +1,58 @@
+header {
+    z-index: 0;
+    height: 94vh;
+    margin-top: 6vh;
+    padding: 0 5vw !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: radial-gradient(50% 51200% at 50% 48.89%, #323C8C 0%, #2A1947 100%);
+    padding: 0 4vw;
+}
+header * {
+    z-index: 5;
+}
+section {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+}
+.bg {
+    position: absolute;
+    z-index: 0;
+    width: 1000vw;
+    height: 94vh;
+    left: 0px;
+    top: 6vh;
+    background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, #15181a 100%);
+}
+.command {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1vw;
+    border-radius: 2vh;
+    width: fit-content;
+}
+.command p {
+    font-family: 'Roboto Mono', monospace !important;
+    margin-right: 1vw;
+}
+.command svg {
+    cursor: pointer;
+    height: 2vh;
+    width: 2vh;
+}
+header img {
+    height: 50%;
+}
+@media screen and (max-width: 900px) {
+    header pre {
+        display: none;
+    }
+}
