@@ -2,7 +2,6 @@ import styles from './page.module.css'
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Features from "@/components/Features";
-import Preloader from "@/components/Preloader";
 
 export default function Home() {
 
