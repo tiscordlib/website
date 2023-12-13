@@ -13,7 +13,7 @@ export default function Home() {
                     name="Tiscord"
                     elements={[
                         {name: 'Documentation', url: '/docs'},
-                        {name: 'Github', url: 'https://github.com/meetzli/tiscord'}
+                        {name: 'Github', url: 'https://github.com/tiscordlib/tiscord'}
                     ]}
                 />
                 <Header description="A fast, object-oriented Discord API wrapper."/>
