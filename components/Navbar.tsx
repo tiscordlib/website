@@ -1,5 +1,6 @@
 'use client';
 import styles from '../app/page.module.css'
+import Image from "next/image";
 
 export default function Navbar(
     {name, elements}: { name: string, elements: { name: string, url: string }[] }
@@ -10,7 +11,7 @@ export default function Navbar(
 
     return (
         <nav className={styles.nav}>
-            <img src="/logo.webp" alt="Tiscord Logo"/>
+            <Image src={"/logo.webp"} alt={"Tiscord logo"} />
             <div>{links}</div>
         </nav>
     )
