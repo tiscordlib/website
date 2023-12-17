@@ -5,20 +5,23 @@ export default function Features() {
     return (
         <div className={styles.features}>
             <Feature
-                name="Maintained"
+                name="Active Maintenance"
                 icon={<MdBolt />}
-                description="Tiscord is actively maintained, and new API features are added quickly."
+                description="Tiscord is being actively updated and new API features are being added in rapid succession.
+
+                "
             />
             <Feature
-                name="Customizable"
+                name="Customization"
                 icon={<MdBuild />}
-                description="Tiscord tries to be as customizable as it can, e.g. you can configure caching, debug logs, and much more."
+                description="We want Tiscord to be flexible. Configure it according to your needs. You can configure caching, debug logs and much more."
             />
             <Feature
-                name="Simple"
+                name="Ease of use"
                 icon={<MdDone />}
-                description="If you don't want to customize your bot's config, you can keep your code simple and clean with Tiscord."
+                description="In favour of Tiscord is simplicity. Enjoy the beauty of your code by leaving it clean and simple."
             />
+
         </div>
     )
 

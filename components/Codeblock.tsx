@@ -4,6 +4,7 @@
 import styles from '../app/page.module.css'
 import hljs from "highlight.js";
 import { Roboto_Mono} from 'next/font/google';
+import {MdContentCopy} from "react-icons/md";
 
 const roboto = Roboto_Mono({
     weight: ["100", "300", "400", "500", "700"],
@@ -37,8 +38,13 @@ client.login();`;
     return (
 
         <pre className={styles.hljs_bg}>
-            <code className={`language-javascript ${roboto.className}`} dangerouslySetInnerHTML={{__html: code}}>
+            <code className={`language-javascript ${roboto.className}`} dangerouslySetInnerHTML={{__html: code}} style={{position: "relative"}}>
             </code>
+            <div className={styles.copy}>
+                <MdContentCopy onClick={() => {
+                    navigator.clipboard.writeText(code)
+                }}/>
+            </div>
         </pre>
     );
 }

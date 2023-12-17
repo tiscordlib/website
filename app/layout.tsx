@@ -1,3 +1,5 @@
+
+
 import type { Metadata } from 'next'
 import { Be_Vietnam_Pro} from 'next/font/google'
 import './globals.css'
@@ -12,6 +14,13 @@ export const metadata: Metadata = {
   title: 'Tiscord',
   description: 'A fast, object-oriented Discord API wrapper.',
 }
+
+export const viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    minimumScale: 1,
+}
+
 
 export default function RootLayout({
   children,

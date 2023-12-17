@@ -12,13 +12,13 @@ export default function Home() {
                 <Navbar
                     name="Tiscord"
                     elements={[
-                        {name: 'Documentation', url: '/docs'},
+                        {name: 'Docs', url: '/docs'},
                         {name: 'Github', url: 'https://github.com/tiscordlib/tiscord'}
                     ]}
                 />
                 <Header description="A fast, object-oriented Discord API wrapper."/>
                 <section className={styles.bottom}>
-                    <h1> Why use Tiscord? </h1>
+                    <h1> Reasons to use Tiscord</h1>
                     <Features/>
                 </section>
 
