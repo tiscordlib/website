@@ -40,11 +40,6 @@ client.login();`;
         <pre className={styles.hljs_bg}>
             <code className={`language-javascript ${roboto.className}`} dangerouslySetInnerHTML={{__html: code}} style={{position: "relative"}}>
             </code>
-            <div className={styles.copy}>
-                <MdContentCopy onClick={() => {
-                    navigator.clipboard.writeText(code)
-                }}/>
-            </div>
         </pre>
     );
 }
